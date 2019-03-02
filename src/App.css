@@ -17,6 +17,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+
 }
 
 .App-link {
@@ -30,4 +31,100 @@
   to {
     transform: rotate(360deg);
   }
+}
+.container-fluid{
+  background-color: var(--color-grey-light);
+  font-family: 'Montserrat', sans-serif;
+}
+.header {
+  text-align: center;
+  font-family: cursive;
+    text-shadow: 2px 2px 2px  #ff80bf
+    
+}
+.text-center{
+  text-align: center;
+}
+.form{
+  
+    box-shadow: 2px 2px 3px 3px  #ccc;
+    border: 2px  #eee; 
+    width: 55%;
+    margin:0 auto;
+    padding: 20px;
+   
+    margin-bottom: 20px;
+}
+.form-control{
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 15px;
+  margin-top: 5px;
+  width: 50%;
+}
+.contacts{
+    margin-top: 39px;
+    display: inline;
+
+}
+
+.App{
+    margin-top: 5%;
+    box-shadow: 2px 2px 3px 3px  #ccc;
+    border: 2px solid #eee;
+    padding:20px;
+
+
+}
+.App1{margin:0 auto;
+    margin-top: 5%;
+    box-shadow: 2px 2px 3px 3px  #ccc;
+    width: 50%;
+    padding: 20px;
+
+  background-color: var(--color-grey-light);
+  font-family: 'Montserrat', sans-serif;
+   }
+.margin{
+  margin-top: 10px;
+}
+  .btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.sp{
+  margin-right: 30px;
+  margin-bottom: 30px;
+}.sp1{
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+.a{
+  margin-bottom:25px; 
+}
+.k{
+  font-size: 10px;
+  margin-left: 50px;
+  margin-bottom: 4px;
 }
