@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Remarkable from 'remarkable';
 
 class App extends Component {
       
@@ -19,7 +20,14 @@ class App extends Component {
                 name:event.target.value
             })
         }
-        
+        this.getRawMarkup=()=> {
+    const md = new Remarkable();
+    return { __html: md.render(this.state.name) };
+        }
+         this.getRawMarkup2=()=> {
+    const md = new Remarkable();
+    return { __html: md.render(this.state.number) };
+        }
         this.handleInputChange2=(event)=>{
             this.setState({
                 number:event.target.value
@@ -76,13 +84,15 @@ class App extends Component {
               <div className="container">
               <form className="form">
               <div class="form-group">
-                <input type="text" className="form-control" onChange={this.handleInputChange1} value={this.state.name} placeHolder="Name" />
+                <input type="text" id="markdown-content" className="form-control" onChange={this.handleInputChange1} value={this.state.name} placeHolder="Name" />
               </div>
               <div class="form-group">
                 <input type="text" className="form-control" onChange={this.handleInputChange2} value={this.state.number} placeHolder="Number"/>
               </div>
               <button type="button" className="btn btn-primary margin" onClick={this.addContact}>Save</button>
             </form>
+            <div className="content" dangerouslySetInnerHTML={this.getRawMarkup()} />
+            <div className="content" dangerouslySetInnerHTML={this.getRawMarkup2()} />
               </div>
           )
       }
